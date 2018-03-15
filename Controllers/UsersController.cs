@@ -114,7 +114,7 @@ namespace DatingApp.API.Controllers
 
             if(await _repo.SaveAll())
             {
-                return Ok();
+                return Ok(new {});
             }
 
             return BadRequest("Failed to add user");
